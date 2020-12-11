@@ -1,0 +1,17 @@
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\bin\Debug\ObserverChatter.exe.config
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\bin\Debug\ObserverChatter.exe
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\bin\Debug\ObserverChatter.pdb
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.csprojAssemblyReference.cache
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ChatClient.g.cs
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\MainWindow.g.cs
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\App.g.cs
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter_MarkupCompile.cache
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter_MarkupCompile.lref
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ChatClient.baml
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\MainWindow.baml
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.g.resources
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.Properties.Resources.resources
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.csproj.GenerateResource.cache
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.csproj.CoreCompileInputs.cache
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.exe
+F:\Documents\School\5.Klasse\POS\ObserverChatter\ObserverChatter\obj\Debug\ObserverChatter.pdb

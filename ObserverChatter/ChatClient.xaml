@@ -18,10 +18,12 @@
             <ColumnDefinition Width="128*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Background="AliceBlue" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></Label>
-        <Label x:Name="NameLabel" Content="Susi" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
+        <Label x:Name="clientNameLabel" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
 
+        <ListView x:Name="messagesListView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"></ListView>
+        
         <Label Content="Msg:" Grid.Row="1" Grid.Column="0" Margin="0,345,0,0.5" Grid.RowSpan="2"></Label>
-        <TextBlock x:Name="MsgText" Grid.Row="2" Grid.Column="1"></TextBlock>
-        <Button Content="Send" Grid.Row="2" Grid.Column="2" ></Button>
+        <TextBox x:Name="msgText" Grid.Row="2" Grid.Column="1" Margin="0,5,0,5"></TextBox>
+        <Button Content="Send" Grid.Row="2" Grid.Column="2" Click="SendMessage" ></Button>
     </Grid>
 </Window>

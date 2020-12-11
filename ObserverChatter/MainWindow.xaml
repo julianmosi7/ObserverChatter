@@ -19,9 +19,9 @@
                 <ColumnDefinition Width="90*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Button Content="Start Client" Grid.Column="0" Click="StartClient"></Button>
-            <TextBlock x:Name="ClientName" Grid.Column="1"></TextBlock>
+            <TextBox x:Name="clientNameTextBox" Grid.Column="1" Margin="0,5,0,5"></TextBox>
             <Label Content="Nr. Clients" Grid.Column="2"></Label>
-            <Label x:Name="NumberClients" Content="4" Grid.Column="3"></Label>
+            <Label x:Name="numberClients" Content="4" Grid.Column="3"></Label>
 
 
         </Grid>

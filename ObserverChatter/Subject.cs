@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObserverChatter
 {
-    abstract class Subject
+    public abstract class Subject
     {
         List<IObserver> observers = new List<IObserver>();
 
@@ -16,6 +16,8 @@ namespace ObserverChatter
         public void Attach(IObserver observer)
         {
             observers.Add(observer);
+            //Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{observer.ClientName} attached");
         }
 
         public void Detach(IObserver observer)

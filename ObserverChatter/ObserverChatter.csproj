@@ -58,6 +58,7 @@
     <Compile Include="ChatClient.xaml.cs">
       <DependentUpon>ChatClient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChatSubject.cs" />
     <Compile Include="IObserver.cs" />
     <Compile Include="Subject.cs" />
     <Page Include="ChatClient.xaml">

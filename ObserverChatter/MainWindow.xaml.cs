@@ -20,14 +20,18 @@ namespace ObserverChatter
     /// </summary>
     public partial class MainWindow : Window
     {
+        ChatSubject chatSubject;
+
         public MainWindow()
         {
             InitializeComponent();
+            chatSubject = new ChatSubject();
         }
 
         private void StartClient(object sender, RoutedEventArgs e)
         {
-
+            string name = clientNameTextBox.Text;
+            new ChatClient(chatSubject, name).Show();
         }
     }
 }
