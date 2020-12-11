@@ -16,13 +16,13 @@ namespace ObserverChatter
         public void Attach(IObserver observer)
         {
             observers.Add(observer);
-            //Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"{observer.ClientName} attached");
+            observers.ForEach(x => x.ClientAttached(observer.ClientName));
         }
 
         public void Detach(IObserver observer)
         {
-            observers.Add(observer);
+            observers.Remove(observer);
+            observers.ForEach(x => x.ClientDetached(observer.ClientName));
         }
 
         public void Notify(string name, string msg)

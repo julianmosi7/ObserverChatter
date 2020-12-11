@@ -37,13 +37,13 @@ namespace ObserverChatter
 
         public void ClientAttached(string name)
         {
-            //Console.ForegroundColor = ConsoleColor.Green;
+            messagesListView.Items.Add($"[{DateTime.Now}] {name}: hat sich angemeldet");
             Console.WriteLine($"{name} attached");
         }
 
         public void ClientDetached(string name)
         {
-            //Console.ForegroundColor = ConsoleColor.Red;
+            messagesListView.Items.Add($"[{DateTime.Now}] {name}: hat sich abgemeldet");
             Console.WriteLine($"{name} detached");
         }
 
@@ -56,7 +56,13 @@ namespace ObserverChatter
         private void SendMessage(object sender, RoutedEventArgs e)
         {
             msg = msgText.Text;
+            msgText.Text = "";
             subject.SetState(name, msg);
+        }
+
+        private void Detach(object sender, EventArgs e)
+        {
+            subject.Detach(this);
         }
     }
 }

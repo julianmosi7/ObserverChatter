@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ObserverChatter"
         mc:Ignorable="d"
-        Title="ChatClient" Height="440" Width="390">
+        Title="ChatClient" Height="440" Width="390" Closed="Detach">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"></RowDefinition>
