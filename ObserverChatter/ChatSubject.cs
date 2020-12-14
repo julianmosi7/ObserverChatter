@@ -10,17 +10,19 @@ namespace ObserverChatter
     {
         private string name;
         private string msg;
+        private string theme;
 
         public string GetState()
         {
             return name + " " + msg;
         }
 
-        public void SetState(string clientName, string clientMsg)
+        public void SetState(string clientName, string clientMsg, string clientTheme)
         {
             name = clientName;
             msg = clientMsg;
-            Notify(name, msg);
+            theme = clientTheme;
+            Notify(name, msg, theme);
         }
     }
 }

@@ -24,14 +24,20 @@ namespace ObserverChatter
 
         public string name;
         public string msg;
+        public string themes;
+        public string theme;
         public int id;
 
         public MainWindow()
         {
             InitializeComponent();
+            theme = "";
+            themes = "";
         }
 
         public string ClientName => name;
+
+        public string Themes => themes;
 
         public void ClientAttached(string name)
         {

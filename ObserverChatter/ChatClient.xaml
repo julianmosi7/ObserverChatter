@@ -9,21 +9,27 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="29*"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="346*"></RowDefinition>
             <RowDefinition Height="38*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="44*"></ColumnDefinition>
-            <ColumnDefinition Width="213*"></ColumnDefinition>
-            <ColumnDefinition Width="128*"></ColumnDefinition>
+            <ColumnDefinition Width="42*"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+            <ColumnDefinition Width="85"></ColumnDefinition>
+            <ColumnDefinition Width="55*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Background="AliceBlue" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></Label>
-        <Label x:Name="clientNameLabel" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" />
+        <Label Background="AliceBlue" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"></Label>
+        <Label x:Name="clientNameLabel" Content="row" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center" />
 
-        <ListView x:Name="messagesListView" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"></ListView>
-        
-        <Label Content="Msg:" Grid.Row="1" Grid.Column="0" Margin="0,345,0,0.5" Grid.RowSpan="2"></Label>
-        <TextBox x:Name="msgText" Grid.Row="2" Grid.Column="1" Margin="0,5,0,5"></TextBox>
-        <Button Content="Send" Grid.Row="2" Grid.Column="2" Click="SendMessage" ></Button>
+        <Label Content="Topics of interest:" Grid.Row="1" Grid.Column="0"></Label>
+        <TextBox x:Name="themesText" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="5,5" SelectionChanged="ThemesChanged"></TextBox>
+
+        <ListView x:Name="messagesListView" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"></ListView>
+
+        <Label Content="Msg:" Grid.Row="3" Grid.Column="0" Margin="0,2,0,0"/>
+        <TextBox x:Name="msgText" Grid.Row="3" Grid.Column="1" Margin="5,5"></TextBox>
+        <TextBox x:Name="themeText" Grid.Row="3" Grid.Column="2" Margin="5,5"></TextBox>
+        <Button Content="Send" Grid.Row="3" Grid.Column="3" Click="SendMessage" ></Button>
     </Grid>
 </Window>

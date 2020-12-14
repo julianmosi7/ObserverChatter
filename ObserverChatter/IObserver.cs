@@ -3,6 +3,7 @@
     public interface IObserver
     {
         string ClientName { get; }
+        string Themes { get; }
 
         void ClientAttached(string name);
         void ClientDetached(string name);

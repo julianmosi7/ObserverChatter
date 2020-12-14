@@ -23,17 +23,22 @@ namespace ObserverChatter
 
         public string name;
         public string msg;
+        public string themes;
+        public string theme;
 
         public ChatClient(ChatSubject chatSubject, string clientName)
         {
             InitializeComponent();
             subject = chatSubject;
             name = clientName;
+            themes = "General";
+            themesText.Text = themes;
             clientNameLabel.Content = name;
             chatSubject.Attach(this);
         }
 
         public string ClientName => name;
+        public string Themes => themes;
 
         public void ClientAttached(string name)
         {
@@ -56,13 +61,20 @@ namespace ObserverChatter
         private void SendMessage(object sender, RoutedEventArgs e)
         {
             msg = msgText.Text;
+            theme = themeText.Text;
             msgText.Text = "";
-            subject.SetState(name, msg);
+            themeText.Text = "";
+            subject.SetState(name, msg, theme);
         }
 
         private void Detach(object sender, EventArgs e)
         {
             subject.Detach(this);
+        }
+
+        private void ThemesChanged(object sender, RoutedEventArgs e)
+        {
+            themes = themesText.Text;
         }
     }
 }

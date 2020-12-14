@@ -25,9 +25,9 @@ namespace ObserverChatter
             observers.ForEach(x => x.ClientDetached(observer.ClientName));
         }
 
-        public void Notify(string name, string msg)
-        {
-            observers.ForEach(x => x.Update(name, msg));
+        public void Notify(string name, string msg, string theme)
+        {            
+            observers.Where(x => x.Themes.Contains(theme)).ToList().ForEach(x => x.Update(name, msg));
         }
     }
 }
